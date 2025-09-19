@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Flutter analyze & build (maps ui)",
+			"type": "shell",
+			"command": "flutter analyze && flutter build apk --debug",
+			"isBackground": false,
+			"problemMatcher": [
+				"$dart-buildrunner"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Flutter analyze",
+			"type": "shell",
+			"command": "flutter analyze",
+			"isBackground": false,
+			"problemMatcher": [
+				"$dart-buildrunner"
+			],
+			"group": "build"
+		}
+	]
+}

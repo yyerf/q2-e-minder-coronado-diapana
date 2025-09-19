@@ -1,0 +1,18 @@
+[Unit]
+Description=IoT E-Waste Battery Monitor
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=yyerf
+Group=yyerf
+WorkingDirectory=/home/pi/battery_monitor
+ExecStart=/usr/bin/python3 /home/yyerf/battery_monitor/battery_monitor.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

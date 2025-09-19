@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: Put your real Google Maps API key here for Android builds. -->
+    <string name="google_maps_api_key">YOUR_ANDROID_GOOGLE_MAPS_API_KEY</string>
+</resources>

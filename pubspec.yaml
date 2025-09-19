@@ -1,0 +1,97 @@
+name: iot_e_waste_monitor
+description: A Flutter app for monitoring car electronics and predicting e-waste generation
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.6
+  riverpod_annotation: ^2.3.0
+  
+  # UI Components
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.8
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.7.0
+  
+  # Navigation
+  go_router: ^12.1.1
+  
+  # Future Firebase Integration (commented out for now)
+  # firebase_core: ^2.17.0
+  # firebase_auth: ^4.10.1
+  # cloud_firestore: ^4.9.3
+  # firebase_storage: ^11.2.8
+  # firebase_messaging: ^14.6.9
+  
+  # IoT Communication
+  mqtt_client: ^10.0.0
+  http: ^1.1.0
+  web_socket_channel: ^2.4.0
+  
+  # Maps & Location (OpenStreetMap via flutter_map for prototyping)
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+  geolocator: ^10.1.0
+  # geocoding: ^2.1.1
+  
+  # Charts & Data Visualization
+  fl_chart: ^0.64.0
+  syncfusion_flutter_charts: ^23.1.36
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  sqflite: ^2.3.0
+  
+  # Utilities
+  collection: ^1.17.2
+  json_annotation: ^4.8.1
+  dio: ^5.3.2
+  connectivity_plus: ^5.0.1
+  device_info_plus: ^9.1.0
+  permission_handler: ^11.0.1
+  package_info_plus: ^4.2.0
+  url_launcher: ^6.3.0
+  
+  # Date & Time
+  intl: ^0.18.1
+  timeago: ^3.5.0
+  
+  # Notifications
+  flutter_local_notifications: ^19.4.1
+  
+  # Future Social Auth (commented out for now)
+  # google_sign_in: ^6.1.5
+  # sign_in_with_apple: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+  riverpod_generator: ^2.3.0
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+dependency_overrides:
+  web: 0.5.1
